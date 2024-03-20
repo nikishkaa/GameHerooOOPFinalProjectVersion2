@@ -8,7 +8,6 @@ public class GameHeroUI {
     }
 
     public static StringBuilder getUserUI() {
-
         return BUILDER;
     }
 }
