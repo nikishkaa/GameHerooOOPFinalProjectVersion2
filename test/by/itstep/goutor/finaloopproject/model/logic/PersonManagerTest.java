@@ -21,6 +21,7 @@ public class PersonManagerTest {
 
         int[] actual = PersonManager.calculateTotalStats(army);
 
+
         assertEquals(expected, actual);
     }
 
