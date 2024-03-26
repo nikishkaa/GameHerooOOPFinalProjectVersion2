@@ -16,6 +16,7 @@ public class PersonManagerTest {
                 new MagicianAstrologer("1", true, 100, 20, 20, 20),
                 new Knight("2", true, 100, 30, 30, 30)};
         Army army = new Army(people);
+
         int[] expected = new int[]{50, 50, 50};
 
 
