@@ -18,8 +18,7 @@ public class Main {
 
         int totalForce = PersonManager.calculateTotalForce(army);
 
-        System.out.println(army);
-        Printer.print(Arrays.toString(person));
+        Printer.print(army.toString());
         Printer.print(GameHeroUI.getUserUI(totalForce));
     }
 }

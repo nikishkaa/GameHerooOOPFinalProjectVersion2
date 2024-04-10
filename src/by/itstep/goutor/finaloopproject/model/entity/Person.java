@@ -64,11 +64,10 @@ public class Person {
     @Override
     public String toString() {
         return "Person{" +
-                "name='" + name + '\'' +
-                ", alive=" + alive +
-                ", health=" + health +
-                ", level=" + level +
-                ", force=" + force +
-                '}';
+                "name = " + name + '\'' +
+                ", alive = " + alive +
+                ", health = " + health +
+                ", level = " + level +
+                ", force = " + force;
     }
 }

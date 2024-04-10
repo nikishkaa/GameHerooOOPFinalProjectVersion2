@@ -21,8 +21,9 @@ public class Knight extends Person {
 
     @Override
     public String toString() {
-        return "Knight{" +
-                "knightDamage=" + knightDamage +
+        return super.toString() +
+
+                ", knightDamage = " + knightDamage +
                 '}';
     }
 

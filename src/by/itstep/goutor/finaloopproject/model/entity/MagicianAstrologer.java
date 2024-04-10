@@ -1,6 +1,6 @@
 package by.itstep.goutor.finaloopproject.model.entity;
 
-public class MagicianAstrologer extends Person{
+public class MagicianAstrologer extends Person {
 
     private int magicDamage;
 
@@ -22,8 +22,8 @@ public class MagicianAstrologer extends Person{
 
     @Override
     public String toString() {
-        return "MagicianAstrologer{" +
-                "magicDamage=" + magicDamage +
+        return super.toString() +
+                ", magicDamage = " + magicDamage +
                 '}';
     }
 }
