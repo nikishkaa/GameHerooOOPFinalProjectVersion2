@@ -8,8 +8,6 @@ import by.itstep.goutor.finaloopproject.model.logic.PersonManager;
 import by.itstep.goutor.finaloopproject.util.GameHeroUI;
 import by.itstep.goutor.finaloopproject.view.Printer;
 
-import java.util.Arrays;
-
 public class Main {
     public static void main(String[] args) {
         Person[] person = new Person[]{new MagicianAstrologer("1", true, 100, 20, 20, 20),
@@ -17,8 +15,9 @@ public class Main {
         Army army = new Army(person);
 
         int totalForce = PersonManager.calculateTotalForce(army);
+        int totalLevel = PersonManager.calculateTotalLevel(army);
 
         Printer.print(army.toString());
-        Printer.print(GameHeroUI.getUserUI(totalForce));
+        Printer.print(GameHeroUI.getUserUI(totalForce, totalLevel));
     }
 }

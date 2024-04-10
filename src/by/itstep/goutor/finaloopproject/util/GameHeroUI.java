@@ -8,8 +8,8 @@ public class GameHeroUI {
         BUILDER = new StringBuilder();
     }
 
-    public static String getUserUI(int totalForce) {
-        BUILDER.append("\nTotal force ").append(totalForce);
+    public static String getUserUI(int totalForce, int totalLevel) {
+        BUILDER.append("\nTotal level ").append(totalLevel).append("\nTotal force ").append(totalForce);
         return BUILDER.toString();
     }
 }

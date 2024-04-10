@@ -30,12 +30,18 @@ public class PersonManagerByPosTest {
 
     @Test
     public void calculateTotalForceTest() {
-
         int expected = 50;
-
 
         int actual = PersonManager.calculateTotalForce(army);
 
+        assertEquals(expected, actual, 0.0);
+    }
+
+    @Test
+    public void calculateTotalLevelTest() {
+        int expected = 50;
+
+        int actual = PersonManager.calculateTotalLevel(army);
 
         assertEquals(expected, actual, 0.0);
     }

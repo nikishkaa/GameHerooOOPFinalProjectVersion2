@@ -17,4 +17,18 @@ public class PersonManager {
 
         return totalForce;
     }
+
+    public static int calculateTotalLevel(Army armies) {
+        if (armies == null || armies.getSize() == 0) {
+            return -1;
+        }
+
+
+        int totalLevel = 0;
+        for (Person person : armies.getPersons()) {
+            totalLevel += person.getLevel();
+        }
+
+        return totalLevel;
+    }
 }
