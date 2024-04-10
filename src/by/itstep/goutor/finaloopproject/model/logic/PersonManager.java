@@ -38,11 +38,11 @@ public class PersonManager {
         }
 
 
-        int totalLevel = 0;
+        int totalSpecialDamage = 0;
         for (Person person : armies.getPersons()) {
-            totalLevel += person.getSpecialDamage();
+            totalSpecialDamage += person.getSpecialDamage();
         }
 
-        return totalLevel;
+        return totalSpecialDamage;
     }
 }
