@@ -8,6 +8,9 @@ public class Person {
     private int force;
 
     public Person() {
+        alive = true;
+        health = 100;
+        name = "No name";
     }
 
     public Person(String name, boolean alive, int health, int level, int force) {
