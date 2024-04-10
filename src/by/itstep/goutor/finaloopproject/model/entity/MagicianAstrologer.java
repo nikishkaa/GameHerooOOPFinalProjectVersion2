@@ -8,22 +8,12 @@ public class MagicianAstrologer extends Person {
     }
 
     public MagicianAstrologer(String name, boolean alive, int health, int level, int force, int magicDamage) {
-        super(name, alive, health, level, force);
-        this.magicDamage = magicDamage;
+        super(name, alive, health, level, force, magicDamage);
     }
 
-    public int getMagicDamage() {
-        return magicDamage;
-    }
-
-    public void setMagicDamage(int magicDamage) {
-        this.magicDamage = magicDamage;
-    }
 
     @Override
     public String toString() {
-        return super.toString() +
-                ", magicDamage = " + magicDamage +
-                '}';
+        return super.toString();
     }
 }

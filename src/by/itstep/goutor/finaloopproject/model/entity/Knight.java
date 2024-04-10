@@ -7,24 +7,13 @@ public class Knight extends Person {
     }
 
     public Knight(String name, boolean alive, int health, int level, int force, int knightDamage) {
-        super(name, alive, health, level, force);
-        this.knightDamage = knightDamage;
+        super(name, alive, health, level, force, knightDamage);
     }
 
-    public int getKnightDamage() {
-        return knightDamage;
-    }
-
-    public void setKnightDamage(int knightDamage) {
-        this.knightDamage = knightDamage;
-    }
 
     @Override
     public String toString() {
-        return super.toString() +
-
-                ", knightDamage = " + knightDamage +
-                '}';
+        return super.toString();
     }
 
 }

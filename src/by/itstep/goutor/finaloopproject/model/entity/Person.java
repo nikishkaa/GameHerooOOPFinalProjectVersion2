@@ -6,6 +6,7 @@ public class Person {
     private int health;
     private int level;
     private int force;
+    private int specialDamage;
 
     public Person() {
         alive = true;
@@ -13,12 +14,13 @@ public class Person {
         name = "No name";
     }
 
-    public Person(String name, boolean alive, int health, int level, int force) {
+    public Person(String name, boolean alive, int health, int level, int force, int specialDamage) {
         this.name = name;
         this.alive = alive;
         this.health = health;
         this.level = level;
         this.force = force;
+        this.specialDamage = specialDamage;
     }
 
     public String getName() {
@@ -61,6 +63,14 @@ public class Person {
         this.force = force;
     }
 
+    public int getSpecialDamage() {
+        return specialDamage;
+    }
+
+    public void setSpecialDamage(int specialDamage) {
+        this.specialDamage = specialDamage;
+    }
+
     @Override
     public String toString() {
         return "Person{" +
@@ -68,6 +78,7 @@ public class Person {
                 ", alive = " + alive +
                 ", health = " + health +
                 ", level = " + level +
-                ", force = " + force;
+                ", force = " + force +
+                ", special damage = " + specialDamage;
     }
 }
