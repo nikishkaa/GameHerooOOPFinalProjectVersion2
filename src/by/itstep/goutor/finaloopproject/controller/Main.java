@@ -10,8 +10,8 @@ import by.itstep.goutor.finaloopproject.view.Printer;
 
 public class Main {
     public static void main(String[] args) {
-        Person[] person = new Person[]{new MagicianAstrologer("1", true, 100, 20, 20, 20),
-                new Knight("2", true, 100, 30, 30, 30)};
+        Person[] person = new Person[]{new MagicianAstrologer("magician astrologer 1", true, 100, 20, 20, 20),
+                new Knight("knight 1", true, 100, 30, 30, 30)};
         Army army = new Army(person);
 
         int totalForce = PersonManager.calculateTotalForce(army);
