@@ -22,4 +22,13 @@ public class PersonManagerByNullTest {
 
         Assert.assertEquals(expected, actual, 0.0);
     }
+
+    @Test
+    public void calculateTotalSpecialDamageTestByNull() {
+        int expected = -1;
+
+        int actual = PersonManager.calculateTotalSpecialDamage(null);
+
+        Assert.assertEquals(expected, actual, 0.0);
+    }
 }

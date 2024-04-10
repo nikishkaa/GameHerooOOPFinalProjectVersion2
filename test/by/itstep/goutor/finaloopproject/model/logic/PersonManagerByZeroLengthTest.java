@@ -33,12 +33,20 @@ public class PersonManagerByZeroLengthTest {
         Assert.assertEquals(expected, actual, 0.0);
     }
 
-
     @Test
     public void calculateTotalLevelTestForNullLength() {
         int expected = -1;
 
         int actual = PersonManager.calculateTotalLevel(army);
+
+        Assert.assertEquals(expected, actual, 0.0);
+    }
+
+    @Test
+    public void calculateTotalSpecialDamageTestForNullLength() {
+        int expected = -1;
+
+        int actual = PersonManager.calculateTotalSpecialDamage(army);
 
         Assert.assertEquals(expected, actual, 0.0);
     }

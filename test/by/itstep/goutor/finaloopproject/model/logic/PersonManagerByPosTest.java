@@ -46,4 +46,13 @@ public class PersonManagerByPosTest {
         assertEquals(expected, actual, 0.0);
     }
 
+    @Test
+    public void calculateTotalSpecialDamageTest() {
+        int expected = 50;
+
+        int actual = PersonManager.calculateTotalSpecialDamage(army);
+
+        assertEquals(expected, actual, 0.0);
+    }
+
 }

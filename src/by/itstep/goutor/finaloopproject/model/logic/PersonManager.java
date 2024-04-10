@@ -31,4 +31,18 @@ public class PersonManager {
 
         return totalLevel;
     }
+
+    public static int calculateTotalSpecialDamage(Army armies) {
+        if (armies == null || armies.getSize() == 0) {
+            return -1;
+        }
+
+
+        int totalLevel = 0;
+        for (Person person : armies.getPersons()) {
+            totalLevel += person.getSpecialDamage();
+        }
+
+        return totalLevel;
+    }
 }
