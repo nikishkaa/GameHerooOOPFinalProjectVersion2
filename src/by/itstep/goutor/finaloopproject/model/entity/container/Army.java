@@ -2,6 +2,8 @@ package by.itstep.goutor.finaloopproject.model.entity.container;
 
 import by.itstep.goutor.finaloopproject.model.entity.Person;
 
+import java.util.Arrays;
+
 public class Army {
     private static final int DEFAULT_SIZE = 10;
 
@@ -25,5 +27,16 @@ public class Army {
 
     public int getSize() {
         return persons.length;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder builder = new StringBuilder("List of person: \n");
+
+        for (int i = 0; i < persons.length; i++) {
+            builder.append(persons[i]).append("\n");
+        }
+
+        return builder.toString();
     }
 }

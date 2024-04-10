@@ -1,5 +1,6 @@
 package by.itstep.goutor.finaloopproject.util;
 
+
 public class GameHeroUI {
     public static final StringBuilder BUILDER;
 
@@ -7,7 +8,8 @@ public class GameHeroUI {
         BUILDER = new StringBuilder();
     }
 
-    public static StringBuilder getUserUI() {
-        return BUILDER;
+    public static String getUserUI(int totalForce) {
+        BUILDER.append("\nTotal force ").append(totalForce);
+        return BUILDER.toString();
     }
 }
