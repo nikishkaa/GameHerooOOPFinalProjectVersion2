@@ -1,9 +1,8 @@
 package by.itstep.goutor.finaloopproject.model.logic;
 
-import by.itstep.goutor.finaloopproject.model.entity.Knight;
-import by.itstep.goutor.finaloopproject.model.entity.MagicianAstrologer;
-import by.itstep.goutor.finaloopproject.model.entity.Person;
+import by.itstep.goutor.finaloopproject.model.entity.*;
 import by.itstep.goutor.finaloopproject.model.entity.container.Army;
+import by.itstep.goutor.finaloopproject.model.entity.container.BossArmy;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -13,6 +12,8 @@ import static org.junit.Assert.assertEquals;
 public class PersonManagerByPosTest {
     Person[] people;
     Army army;
+    Boss[] boss;
+    BossArmy bossArmy;
 
     @Before
     public void creator() {
@@ -55,4 +56,17 @@ public class PersonManagerByPosTest {
         assertEquals(expected, actual, 0.0);
     }
 
+    @Test
+    public void calculateCalculateVinORNoTest() {
+        boss = new Boss[]{new Dragon("1", 10, 10, 10),
+                new Hydra("2", 10, 10)};
+
+        bossArmy = new BossArmy(boss);
+
+        boolean expected = true;
+
+        boolean actual = PersonManager.calculateVinORNo(army, bossArmy);
+
+        assertEquals(expected, actual);
+    }
 }

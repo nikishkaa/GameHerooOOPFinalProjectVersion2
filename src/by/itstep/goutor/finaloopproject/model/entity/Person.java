@@ -1,6 +1,9 @@
 package by.itstep.goutor.finaloopproject.model.entity;
 
 public class Person {
+    public static final int DEFAULT_HP = 100;
+    public static final boolean DEFAULT_ALIVE = true;
+
     private String name;
     private boolean alive;
     private int health;
@@ -9,8 +12,8 @@ public class Person {
     private int specialDamage;
 
     public Person() {
-        alive = true;
-        health = 100;
+        alive = DEFAULT_ALIVE;
+        health = DEFAULT_HP;
         name = "No name";
     }
 

@@ -10,10 +10,14 @@ public class GameHeroUI {
 
     public static String getUserUI(int totalForce,
                                    int totalLevel,
-                                   int totalSpecialDamage) {
-        BUILDER.append("\nTotal level ").append(totalLevel)
-                .append("\nTotal force ").append(totalForce)
-                .append("\nTotal specialDamage ").append(totalSpecialDamage);
+                                   int totalSpecialDamage,
+                                   boolean vin) {
+        BUILDER.append("\nTotal hero level ").append(totalLevel)
+                .append("\nTotal hero force ").append(totalForce)
+                .append("\nTotal hero specialDamage ").append(totalSpecialDamage)
+                .append("\nWin Boss or no? " +
+                        "\n(This depends is sum of hero stats and boss level) ")
+                .append(vin ? "You vin!" : "You lose!");
         return BUILDER.toString();
     }
 }
