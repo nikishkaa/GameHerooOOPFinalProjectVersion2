@@ -1,14 +1,13 @@
 package by.itstep.goutor.finaloopproject.controller;
 
+import by.itstep.goutor.finaloopproject.util.*;
 import by.itstep.goutor.finaloopproject.model.entity.container.Army;
 import by.itstep.goutor.finaloopproject.model.entity.container.BossArmy;
 import by.itstep.goutor.finaloopproject.model.logic.PersonManager;
-import by.itstep.goutor.finaloopproject.util.*;
 import by.itstep.goutor.finaloopproject.view.Printer;
 
 public class Main {
     public static void main(String[] args) {
-
 
         Army army = ArmyCreator.initArmy();
 
@@ -22,6 +21,7 @@ public class Main {
 
         Printer.print(army.toString());
         Printer.print(bossArmy.toString());
-        Printer.print(GameHeroUI.getUserUI(totalForce, totalLevel, totalSpecialDamage, vin));
+        Printer.print(GameHeroUI.getUserUI(totalForce, totalLevel,
+                totalSpecialDamage, vin));
     }
 }
