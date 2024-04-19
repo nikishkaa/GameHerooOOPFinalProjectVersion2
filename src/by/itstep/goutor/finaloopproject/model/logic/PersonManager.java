@@ -18,7 +18,7 @@ public class PersonManager {
         int totalForce = 0;
         for (Person person : armies.getPersons()) {
             totalForce += person.getForce();
-            LOGGER.trace(String.format("person" + person + "totalForce %d", totalForce));
+            LOGGER.trace(String.format("person: " + person + " \ntotalForce %d", totalForce));
         }
 
         return totalForce;
