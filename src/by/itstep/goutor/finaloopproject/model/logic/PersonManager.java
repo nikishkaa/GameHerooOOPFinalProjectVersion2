@@ -5,9 +5,12 @@ import by.itstep.goutor.finaloopproject.model.entity.Person;
 import by.itstep.goutor.finaloopproject.model.entity.container.Army;
 import by.itstep.goutor.finaloopproject.model.entity.container.BossArmy;
 
+import static by.itstep.goutor.finaloopproject.controller.Main.LOGGER;
+
 public class PersonManager {
     public static int calculateTotalForce(Army armies) {
         if (armies == null || armies.getSize() == 0) {
+            LOGGER.debug("Armies = " + armies + "\nOR armies size = 0");
             return -1;
         }
 
@@ -15,6 +18,7 @@ public class PersonManager {
         int totalForce = 0;
         for (Person person : armies.getPersons()) {
             totalForce += person.getForce();
+            LOGGER.trace(String.format("person" + person + "totalForce %d", totalForce));
         }
 
         return totalForce;
@@ -22,6 +26,7 @@ public class PersonManager {
 
     public static int calculateTotalLevel(Army armies) {
         if (armies == null || armies.getSize() == 0) {
+            LOGGER.debug("Armies = " + armies + "\nOR armies size = 0");
             return -1;
         }
 
@@ -36,6 +41,7 @@ public class PersonManager {
 
     public static int calculateTotalSpecialDamage(Army armies) {
         if (armies == null || armies.getSize() == 0) {
+            LOGGER.debug("Armies = " + armies + "\nOR armies size = 0");
             return -1;
         }
 
@@ -52,6 +58,8 @@ public class PersonManager {
     public static boolean calculateVinORNo(Army army, BossArmy bossArmy) {
         if (army == null || army.getSize() == 0
                 || bossArmy == null || bossArmy.getSize() == 0) {
+            LOGGER.debug("Armies = " + army + "\nOR armies size = 0\n" + "Boss army" + bossArmy
+                    + "\nOR boss army size = 0");
             return false;
         }
 
