@@ -1,24 +1,24 @@
-# Создано https://www.toptal.com/developers/gitignore/api/java,windows,intellij
-# Редактировать по адресу https://www.toptal.com/developers/gitignore?templates=java,windows,intellij.
+# Created by https://www.toptal.com/developers/gitignore/api/windows,java,intellij,intellij+all,intellij+iml
+# Edit at https://www.toptal.com/developers/gitignore?templates=windows,java,intellij,intellij+all,intellij+iml
 
-### Интеллидж ###
-# Охватывает IDE JetBrains: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm и Rider.
-# Ссылка: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839.
+### Intellij ###
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
+# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
-# Пользовательские вещи
+# User-specific stuff
 .idea/**/workspace.xml
 .idea/**/tasks.xml
 .idea/**/usage.statistics.xml
-.idea/**/словари
-.idea/**/полка
+.idea/**/dictionaries
+.idea/**/shelf
 
-# AWS Для конкретного пользователя
+# AWS User-specific
 .idea/**/aws.xml
 
-# Сгенерированные файлы
+# Generated files
 .idea/**/contentModel.xml
 
-# Конфиденциальные или часто обновляемые файлы.
+# Sensitive or high-churn files
 .idea/**/dataSources/
 .idea/**/dataSources.ids
 .idea/**/dataSources.local.xml
@@ -27,143 +27,258 @@
 .idea/**/uiDesigner.xml
 .idea/**/dbnavigator.xml
 
-# Градл
+# Gradle
 .idea/**/gradle.xml
-.idea/**/библиотеки
+.idea/**/libraries
 
-# Gradle и Maven с автоимпортом
-# При использовании Gradle или Maven с автоматическим импортом следует исключить файлы модулей,
-# так как они будут воссозданы и могут вызвать отток пользователей. Раскомментируйте, если используете
-# автоимпорт.
-# .идея/артефакты
+# Gradle and Maven with auto-import
+# When using Gradle or Maven with auto-import, you should exclude module files,
+# since they will be recreated, and may cause churn.  Uncomment if using
+# auto-import.
+# .idea/artifacts
 # .idea/compiler.xml
 # .idea/jarRepositories.xml
 # .idea/modules.xml
 # .idea/*.iml
-# .idea/модули
+# .idea/modules
 # *.iml
 # *.ipr
 
 # CMake
 cmake-build-*/
 
-# Плагин Mongo Explorer
+# Mongo Explorer plugin
 .idea/**/mongoSettings.xml
 
-# Формат проекта на основе файлов
+# File-based project format
 *.iws
 
 # IntelliJ
-вне/
+out/
 
-# плагин mpeltonen/sbt-idea
+# mpeltonen/sbt-idea plugin
 .idea_modules/
 
-# Плагин JIRA
+# JIRA plugin
 atlassian-ide-plugin.xml
 
-# Плагин Cursive Clojure
+# Cursive Clojure plugin
 .idea/replstate.xml
 
-# Плагин SonarLint
+# SonarLint plugin
 .idea/sonarlint/
 
-# Плагин Crashlytics (для Android Studio и IntelliJ)
+# Crashlytics plugin (for Android Studio and IntelliJ)
 com_crashlytics_export_strings.xml
 crashlytics.properties
-крашlytics-build.properties
-ткань.свойства
+crashlytics-build.properties
+fabric.properties
 
-# Rest Client на основе редактора
+# Editor-based Rest Client
 .idea/httpRequests
 
-# Сериализованный кэш-файл Android Studio 3.1+
+# Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
 
-### Патч Intellij ###
-# Причина комментария: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-215987721
+### Intellij Patch ###
+# Comment Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-215987721
 
 # *.iml
-#модули.xml
+# modules.xml
 # .idea/misc.xml
 # *.ipr
 
-# Плагин Sonarlint
+# Sonarlint plugin
 # https://plugins.jetbrains.com/plugin/7973-sonarlint
 .idea/**/sonarlint/
 
-# Плагин SonarQube
+# SonarQube Plugin
 # https://plugins.jetbrains.com/plugin/7238-sonarqube-community-plugin
 .idea/**/sonarIssues.xml
 
-# Плагин Markdown Navigator
+# Markdown Navigator plugin
 # https://plugins.jetbrains.com/plugin/7896-markdown-navigator-enhanced
 .idea/**/markdown-navigator.xml
 .idea/**/markdown-navigator-enh.xml
 .idea/**/markdown-navigator/
 
-# Ошибка создания файла кэша
-# См. https://youtrack.jetbrains.com/issue/JBR-2257.
+# Cache file creation bug
+# See https://youtrack.jetbrains.com/issue/JBR-2257
 .idea/$CACHE_FILE$
 
-# Плагин CodeStream
+# CodeStream plugin
 # https://plugins.jetbrains.com/plugin/12206-codestream
 .idea/codestream.xml
 
-# Azure Toolkit для плагина IntelliJ
+# Azure Toolkit for IntelliJ plugin
 # https://plugins.jetbrains.com/plugin/8053-azure-toolkit-for-intellij
 .idea/**/azureSettings.xml
 
-### Джава ###
-# Скомпилированный файл класса
-*.сорт
+### Intellij+all ###
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
+# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
-# Журнальный файл
-*.бревно
+# User-specific stuff
 
-# BlueJ-файлы
+# AWS User-specific
+
+# Generated files
+
+# Sensitive or high-churn files
+
+# Gradle
+
+# Gradle and Maven with auto-import
+# When using Gradle or Maven with auto-import, you should exclude module files,
+# since they will be recreated, and may cause churn.  Uncomment if using
+# auto-import.
+# .idea/artifacts
+# .idea/compiler.xml
+# .idea/jarRepositories.xml
+# .idea/modules.xml
+# .idea/*.iml
+# .idea/modules
+# *.iml
+# *.ipr
+
+# CMake
+
+# Mongo Explorer plugin
+
+# File-based project format
+
+# IntelliJ
+
+# mpeltonen/sbt-idea plugin
+
+# JIRA plugin
+
+# Cursive Clojure plugin
+
+# SonarLint plugin
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+
+# Editor-based Rest Client
+
+# Android studio 3.1+ serialized cache file
+
+### Intellij+all Patch ###
+# Ignore everything but code style settings and run configurations
+# that are supposed to be shared within teams.
+
+.idea/*
+
+!.idea/codeStyles
+!.idea/runConfigurations
+
+### Intellij+iml ###
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
+# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+
+# User-specific stuff
+
+# AWS User-specific
+
+# Generated files
+
+# Sensitive or high-churn files
+
+# Gradle
+
+# Gradle and Maven with auto-import
+# When using Gradle or Maven with auto-import, you should exclude module files,
+# since they will be recreated, and may cause churn.  Uncomment if using
+# auto-import.
+# .idea/artifacts
+# .idea/compiler.xml
+# .idea/jarRepositories.xml
+# .idea/modules.xml
+# .idea/*.iml
+# .idea/modules
+# *.iml
+# *.ipr
+
+# CMake
+
+# Mongo Explorer plugin
+
+# File-based project format
+
+# IntelliJ
+
+# mpeltonen/sbt-idea plugin
+
+# JIRA plugin
+
+# Cursive Clojure plugin
+
+# SonarLint plugin
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+
+# Editor-based Rest Client
+
+# Android studio 3.1+ serialized cache file
+
+### Intellij+iml Patch ###
+# Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-249601023
+
+*.iml
+modules.xml
+.idea/misc.xml
+*.ipr
+
+### Java ###
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
 *.ctxt
 
-# Мобильные инструменты для Java (J2ME)
+# Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
-# Файлы пакета #
-*.банка
-*.война
+# Package Files #
+*.jar
+*.war
 *.nar
-*.ухо
+*.ear
 *.zip
 *.tar.gz
 *.rar
 
-# журналы сбоев виртуальной машины см. http://www.java.com/en/download/help/error_hotspot.xml.
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
 
 ### Windows ###
-# Файлы кэша миниатюр Windows
+# Windows thumbnail cache files
 Thumbs.db
-Thumbs.db: зашифрованный
+Thumbs.db:encryptable
 ehthumbs.db
 ehthumbs_vista.db
 
-# Файл дампа
+# Dump file
 *.stackdump
 
-# Конфигурационный файл папки
-[Дд]esktop.ini
+# Folder config file
+[Dd]esktop.ini
 
-# Корзина, используемая в общих папках
+# Recycle Bin used on file shares
 $RECYCLE.BIN/
 
-# файлы установщика Windows
-*.такси
+# Windows Installer files
+*.cab
 *.msi
 *.msix
-*.мсм
+*.msm
 *.msp
 
-# Ярлыки Windows
+# Windows shortcuts
 *.lnk
 
-# Конец https://www.toptal.com/developers/gitignore/api/java,windows,intellij
+# End of https://www.toptal.com/developers/gitignore/api/windows,java,intellij,intellij+all,intellij+iml

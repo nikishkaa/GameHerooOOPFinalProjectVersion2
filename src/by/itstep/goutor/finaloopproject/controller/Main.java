@@ -5,9 +5,20 @@ import by.itstep.goutor.finaloopproject.model.entity.container.Army;
 import by.itstep.goutor.finaloopproject.model.entity.container.BossArmy;
 import by.itstep.goutor.finaloopproject.model.logic.PersonManager;
 import by.itstep.goutor.finaloopproject.view.Printer;
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
 
 public class Main {
+    public static final Logger LOGGER;
+
+    static {
+        LOGGER = Logger.getRootLogger();
+    }
+
     public static void main(String[] args) {
+        BasicConfigurator.configure();
+        LOGGER.setLevel(Level.DEBUG);
 
         Army army = ArmyCreator.initArmy();
 
@@ -17,7 +28,6 @@ public class Main {
         int totalLevel = PersonManager.calculateTotalLevel(army);
         int totalSpecialDamage = PersonManager.calculateTotalSpecialDamage(army);
         boolean vin = PersonManager.calculateVinORNo(army, bossArmy);
-
 
         Printer.print(army.toString());
         Printer.print(bossArmy.toString());
