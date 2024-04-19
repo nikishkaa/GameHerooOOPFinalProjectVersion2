@@ -10,7 +10,7 @@ import static by.itstep.goutor.finaloopproject.controller.Main.LOGGER;
 public class PersonManager {
     public static int calculateTotalForce(Army armies) {
         if (armies == null || armies.getSize() == 0) {
-            LOGGER.debug("Armies = " + armies + "\nOR armies size = 0");
+            LOGGER.debug("Armies = null OR armies size = 0");
             return -1;
         }
 
@@ -26,7 +26,7 @@ public class PersonManager {
 
     public static int calculateTotalLevel(Army armies) {
         if (armies == null || armies.getSize() == 0) {
-            LOGGER.debug("Armies = " + armies + "\nOR armies size = 0");
+            LOGGER.debug("Armies = null OR armies size = 0");
             return -1;
         }
 
@@ -41,7 +41,7 @@ public class PersonManager {
 
     public static int calculateTotalSpecialDamage(Army armies) {
         if (armies == null || armies.getSize() == 0) {
-            LOGGER.debug("Armies = " + armies + "\nOR armies size = 0");
+            LOGGER.debug("Armies = null OR armies size = 0");
             return -1;
         }
 
@@ -58,8 +58,8 @@ public class PersonManager {
     public static boolean calculateVinORNo(Army army, BossArmy bossArmy) {
         if (army == null || army.getSize() == 0
                 || bossArmy == null || bossArmy.getSize() == 0) {
-            LOGGER.debug("Armies = " + army + "\nOR armies size = 0\n" + "Boss army" + bossArmy
-                    + "\nOR boss army size = 0");
+            LOGGER.debug("Armies = null OR armies size = 0 " +
+                    "OR Boss army = null OR bos army size = 0");
             return false;
         }
 
