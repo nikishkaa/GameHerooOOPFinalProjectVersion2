@@ -29,6 +29,7 @@ public class Main {
         int totalSpecialDamage = PersonManager.calculateTotalSpecialDamage(army);
         boolean vin = PersonManager.calculateVinORNo(army, bossArmy);
 
+
         Printer.print(army.toString());
         Printer.print(bossArmy.toString());
         Printer.print(GameHeroUI.getUserUI(totalForce, totalLevel,
