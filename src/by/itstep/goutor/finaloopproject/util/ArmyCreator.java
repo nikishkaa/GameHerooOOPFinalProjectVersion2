@@ -12,10 +12,10 @@ public class ArmyCreator {
 
         Person[] person = new Person[]{
                 new MagicianAstrologer("magician astrologer 1", Person.DEFAULT_ALIVE,
-                        Person.DEFAULT_HP, 20, 20, magicDamage),
+                        Person.DEFAULT_HP, 20, 20, magicDamage, ""),
 
                 new Knight("knight 1", Person.DEFAULT_ALIVE,
-                        Person.DEFAULT_HP, 30, 30, knightDamage)};
+                        Person.DEFAULT_HP, 30, 30, knightDamage, "")};
 
 
         return new Army(person);

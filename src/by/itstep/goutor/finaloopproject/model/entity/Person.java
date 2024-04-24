@@ -1,6 +1,6 @@
 package by.itstep.goutor.finaloopproject.model.entity;
 
-public class Person {
+public abstract class Person {
     public static final int DEFAULT_HP = 100;
     public static final boolean DEFAULT_ALIVE = true;
 
@@ -10,20 +10,23 @@ public class Person {
     private int level;
     private int force;
     private int specialDamage;
+    private String amuletDescription;
 
     public Person() {
         alive = DEFAULT_ALIVE;
         health = DEFAULT_HP;
         name = "No name";
+        amuletDescription = "no description";
     }
 
-    public Person(String name, boolean alive, int health, int level, int force, int specialDamage) {
+    public Person(String name, boolean alive, int health, int level, int force, int specialDamage, String amuletDescription) {
         this.name = name;
         this.alive = alive;
         this.health = health;
         this.level = level;
         this.force = force;
         this.specialDamage = specialDamage;
+        this.amuletDescription = amuletDescription;
     }
 
     public String getName() {
@@ -74,6 +77,10 @@ public class Person {
         this.specialDamage = specialDamage;
     }
 
+    public String getAmuletDescription() {
+        return amuletDescription;
+    }
+
     @Override
     public String toString() {
         return "Person{" +
@@ -82,6 +89,7 @@ public class Person {
                 ", health = " + health +
                 ", level = " + level +
                 ", force = " + force +
-                ", special damage = " + specialDamage;
+                ", special damage = " + specialDamage
+                + amuletDescription;
     }
 }
