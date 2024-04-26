@@ -28,6 +28,7 @@ public class Boss {
         this.StatToVin = levelToVin;
     }
 
+
     @Override
     public String toString() {
         return "Boss{" +
