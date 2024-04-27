@@ -7,8 +7,8 @@ public class MagicianAstrologer extends Person {
     public MagicianAstrologer() {
     }
 
-    public MagicianAstrologer(String name, boolean alive, int health, int level, int force, int magicDamage, String amuletDescription) {
-        super(name, alive, health, level, force, magicDamage, amuletDescription);
+    public MagicianAstrologer(String name, boolean alive, int health, int level, int force, int magicDamage, String amuletDescription, String abilityDescription) {
+        super(name, alive, health, level, force, magicDamage, amuletDescription, abilityDescription);
     }
 
 

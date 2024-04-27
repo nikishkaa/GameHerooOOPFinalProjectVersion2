@@ -17,8 +17,8 @@ public class PersonManagerByPosTest {
 
     @Before
     public void creator() {
-        people = new Person[]{new MagicianAstrologer("1", true, 100, 20, 20, 20),
-                new Knight("2", true, 100, 30, 30, 30)};
+        people = new Person[]{new MagicianAstrologer("1", true, 100, 20, 20, 20, "", ""),
+                new Knight("2", true, 100, 30, 30, 30, "", "")};
 
         army = new Army(people);
     }

@@ -11,6 +11,7 @@ public abstract class Person {
     private int force;
     private int specialDamage;
     private String amuletDescription;
+    private String abilityDescription;
 
     public Person() {
         alive = DEFAULT_ALIVE;
@@ -19,14 +20,16 @@ public abstract class Person {
         amuletDescription = "no description";
     }
 
-    public Person(String name, boolean alive, int health, int level, int force, int specialDamage, String amuletDescription) {
+    public Person(String name, boolean alive, int health, int level, int force,
+                  int specialDamage, String amuletDescription, String abilityDescription) {
         this.name = name;
         this.alive = alive;
         this.health = health;
         this.level = level;
         this.force = force;
-        this.specialDamage = specialDamage;
+        this.specialDamage = specialDamage + Ability.FIRE.getSpecialDamageModifier();
         this.amuletDescription = amuletDescription;
+        this.abilityDescription = abilityDescription;
     }
 
     public String getName() {
@@ -81,6 +84,14 @@ public abstract class Person {
         return amuletDescription;
     }
 
+    public String getAbilityDescription() {
+        return abilityDescription;
+    }
+
+    public void setAbilityDescription(String abilityDescription) {
+        this.abilityDescription = abilityDescription;
+    }
+
     @Override
     public String toString() {
         return "Person{" +
@@ -90,6 +101,7 @@ public abstract class Person {
                 ", level = " + level +
                 ", force = " + force +
                 ", special damage = " + specialDamage
-                + amuletDescription;
+                + amuletDescription +
+                ", ability " + abilityDescription;
     }
 }
