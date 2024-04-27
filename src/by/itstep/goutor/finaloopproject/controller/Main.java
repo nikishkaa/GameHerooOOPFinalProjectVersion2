@@ -27,6 +27,7 @@ public class Main {
         int totalForce = PersonManager.calculateTotalForce(army);
         int totalLevel = PersonManager.calculateTotalLevel(army);
         int totalSpecialDamage = PersonManager.calculateTotalSpecialDamage(army);
+
         boolean vin = PersonManager.calculateVinORNo(army, bossArmy);
 
 
