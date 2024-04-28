@@ -18,7 +18,6 @@ public class ArmyCreator {
                 new Knight("knight 1", Person.DEFAULT_ALIVE,
                         Person.DEFAULT_HP, 30, 30, knightDamage, "", Ability.FIRE.toString())};
 
-
         return new Army(person);
     }
 }

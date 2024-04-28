@@ -41,5 +41,13 @@ public class Main {
         LOGGER.info(bossArmy.toString());
         LOGGER.info(GameHeroUI.getUserUI(totalForce, totalLevel,
                 totalSpecialDamage, vin));
+
+
+
+//        String filename = "d: /person.xml";
+//        PersonXMLSerializer.serializer(filename, person);
+//
+//        System.out.println(PersonXMLSerializer.deserializer(filename));
+
     }
 }
