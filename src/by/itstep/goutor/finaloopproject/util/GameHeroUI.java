@@ -17,7 +17,7 @@ public class GameHeroUI {
                 .append("\nTotal hero specialDamage ").append(totalSpecialDamage)
                 .append("\nWin Boss or no? " +
                         "\n(This depends is sum of hero stats and boss level) ")
-                .append(vin ? "You vin!" : "You lose!");
+                .append(vin ? "You vin!\n" : "You lose!\n");
         return BUILDER.toString();
     }
 }

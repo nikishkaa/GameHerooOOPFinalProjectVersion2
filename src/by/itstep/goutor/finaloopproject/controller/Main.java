@@ -35,5 +35,11 @@ public class Main {
         Printer.print(bossArmy.toString());
         Printer.print(GameHeroUI.getUserUI(totalForce, totalLevel,
                 totalSpecialDamage, vin));
+
+
+        LOGGER.info(army.toString());
+        LOGGER.info(bossArmy.toString());
+        LOGGER.info(GameHeroUI.getUserUI(totalForce, totalLevel,
+                totalSpecialDamage, vin));
     }
 }
