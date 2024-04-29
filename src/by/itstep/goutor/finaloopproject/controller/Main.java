@@ -44,10 +44,11 @@ public class Main {
 
 
 
-//        String filename = "d: /person.xml";
-//        PersonXMLSerializer.serializer(filename, person);
-//
-//        System.out.println(PersonXMLSerializer.deserializer(filename));
+/*        String filename = "d: /person.xml";
+        PersonXMLSerializer.serializer(filename, person);
+
+        System.out.println(PersonXMLSerializer.deserializer(filename));
+        */
 
     }
 }
