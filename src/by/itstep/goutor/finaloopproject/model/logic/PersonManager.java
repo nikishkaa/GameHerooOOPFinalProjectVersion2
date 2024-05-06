@@ -78,6 +78,7 @@ public class PersonManager {
             totalStats += person.getSpecialDamage();
         }
 
+
         return totalStats;
     }
 
