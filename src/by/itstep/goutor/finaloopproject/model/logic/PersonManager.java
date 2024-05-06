@@ -88,6 +88,7 @@ public class PersonManager {
             totalStats += boss.getStatToVinToVin();
         }
 
+
         return totalStats;
     }
 }
